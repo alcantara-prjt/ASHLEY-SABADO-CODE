@@ -1,0 +1,267 @@
+/* ------------------------------
+   General Styles
+------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #e9f7e8;
+    color: #243b2a;
+    line-height: 1.6;
+}
+
+/* ------------------------------
+   Navigation
+------------------------------ */
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #287a43;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.logo i {
+    margin-right: 6px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #31523a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #287a43;
+}
+
+/* ------------------------------
+   Hero Section
+------------------------------ */
+
+.hero {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.tag {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background-color: #ccebc9;
+    color: #287a43;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #53665a;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #287a43;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #1d5f33;
+}
+
+.btn i {
+    margin-left: 8px;
+}
+
+/* ------------------------------
+   Cards
+------------------------------ */
+
+.features {
+    max-width: 1100px;
+    margin: 20px auto 70px;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.card i {
+    font-size: 2rem;
+    color: #287a43;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #66756a;
+}
+
+/* ------------------------------
+   Pages
+------------------------------ */
+
+.page {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 40px 25px;
+}
+
+.page-box {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.page h1 {
+    color: #287a43;
+    margin-bottom: 20px;
+}
+
+.page h2 {
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+.page p {
+    color: #53665a;
+    margin-bottom: 15px;
+}
+
+/* ------------------------------
+   Form
+------------------------------ */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c7d8c8;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #287a43;
+    box-shadow: 0 0 0 3px #dff1df;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+/* ------------------------------
+   Footer
+------------------------------ */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #287a43;
+    color: white;
+    margin-top: 50px;
+}
+
+/* ------------------------------
+   Responsive Design
+------------------------------ */
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .page-box {
+        padding: 25px;
+    }
+}
